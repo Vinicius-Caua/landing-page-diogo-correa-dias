@@ -1,8 +1,9 @@
 import { Mynerve } from "next/font/google";
+import HeaderComponent from "./components/Header";
 
 const mynerve = Mynerve({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={mynerve.className}>
-      <body>{children}</body>
+      <body>
+        <HeaderComponent />
+        {children}
+      </body>
     </html>
   );
 }
