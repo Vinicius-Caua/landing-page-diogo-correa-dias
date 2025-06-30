@@ -1,5 +1,6 @@
 import { Mynerve } from "next/font/google";
 import HeaderComponent from "./components/Header";
+import FooterComponent from "./components/Footer";
 
 const mynerve = Mynerve({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <HeaderComponent />
         {children}
+        <FooterComponent />
       </body>
     </html>
   );
