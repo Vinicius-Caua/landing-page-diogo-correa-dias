@@ -1,6 +1,7 @@
 import { Mynerve } from "next/font/google";
 import HeaderComponent from "./components/Header";
 import FooterComponent from "./components/Footer";
+import "./globals.css";
 
 const mynerve = Mynerve({
   subsets: ["latin"],
