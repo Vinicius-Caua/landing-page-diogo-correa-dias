@@ -16,32 +16,44 @@ function HeaderComponent() {
     }
   };
 
-  // Detecta qual seção está visível
+  // Detecta qual seção está visível baseado em pontos fixos
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.6, // 60% da seção precisa estar visível
-        rootMargin: "-136px 0px 0px 0px", // Compensa a altura do header
-      }
-    );
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
 
-    // Observa todas as seções
-    const sections = ["home", "sobre", "livros", "contato"];
-    sections.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-      }
-    });
+      // Definir pontos de troca fixos na tela
+      const breakpoints = {
+        home: { start: 0, end: 800 },
+        sobre: { start: 800, end: 2500 },
+        livros: { start: 2500, end: 4000 },
+        contato: { start: 4000, end: Infinity },
+      };
 
-    return () => observer.disconnect();
+      // Variável para armazenar a seção encontrada
+      let currentSection = "home"; // Default
+
+      // Determinar qual seção está ativa
+      for (const [sectionId, range] of Object.entries(breakpoints)) {
+        if (scrollY >= range.start && scrollY < range.end) {
+          currentSection = sectionId;
+          break;
+        }
+      }
+
+      // Atualizar o estado
+      setActiveSection(currentSection);
+    };
+
+    // Adiciona o listener de scroll
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Chama uma vez no início
+    handleScroll();
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   // Função para determinar as classes de cada item
