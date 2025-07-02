@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutComponent() {
   return (
-    <section className="w-full h-full flex flex-col">
+    <section className="w-full h-full flex flex-col bg-[#F2F7FD]">
       <div className="">
         <div className="flex justify-end -mt-32">
           <Image
