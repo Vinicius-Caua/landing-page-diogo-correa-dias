@@ -17,13 +17,13 @@ function AboutComponent() {
           <Image
             src="/biografia-about.png"
             alt="Papeis com biografia do autor"
-            width={800}
+            width={700}
             height={1158}
           />
           <Image
             src="/retrato-about.png"
             alt="Papeis com retrato do autor"
-            width={700}
+            width={600}
             height={780}
             className="mb-52"
           />

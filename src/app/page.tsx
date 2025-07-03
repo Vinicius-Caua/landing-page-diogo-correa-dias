@@ -12,7 +12,7 @@ export default function Home() {
       <section id="sobre">
         <AboutComponent />
       </section>
-      <section id="Livros">
+      <section id="livros">
         <BooksComponent />
       </section>
     </main>
