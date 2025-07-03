@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutComponent() {
   return (
-    <section className="w-full h-full flex flex-col">
+    <section className="w-full h-full flex flex-col bg-[#F2F7FD]">
       <div className="">
         <div className="flex justify-end -mt-32">
           <Image
@@ -17,13 +17,13 @@ function AboutComponent() {
           <Image
             src="/biografia-about.png"
             alt="Papeis com biografia do autor"
-            width={800}
+            width={700}
             height={1158}
           />
           <Image
             src="/retrato-about.png"
             alt="Papeis com retrato do autor"
-            width={700}
+            width={600}
             height={780}
             className="mb-52"
           />
