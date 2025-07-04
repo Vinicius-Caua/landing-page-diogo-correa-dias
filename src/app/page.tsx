@@ -1,9 +1,9 @@
 import AboutComponent from "./components/About";
 import BooksComponent from "./components/Books";
+import ContactComponent from "./components/Contact";
 import HeroComponent from "./components/Hero";
 
 export default function Home() {
-
   return (
     <main>
       <section id="home">
@@ -14,6 +14,9 @@ export default function Home() {
       </section>
       <section id="livros">
         <BooksComponent />
+      </section>
+      <section id="contato">
+        <ContactComponent />
       </section>
     </main>
   );
