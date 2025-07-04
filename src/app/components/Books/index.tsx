@@ -1,13 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import openLink from "@/utils/openLink";
 
 function BooksComponent() {
-  const openBookLink = (url: string) => {
-    return () => {
-      window.open(url, "_blank");
-    };
-  };
   return (
     <section className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url(/background-publicacoes.png)] -mt-34 shadow-[inset_0_-30px_100px_rgba(0,0,0,0.5)]">
       <div className="flex items-center justify-center">
@@ -50,7 +46,7 @@ function BooksComponent() {
           </div>
           <button
             id="buy-button-one"
-            onClick={openBookLink("https://loja.uiclap.com/titulo/ua39732/")}
+            onClick={openLink("https://loja.uiclap.com/titulo/ua39732/")}
             className="absolute bottom-16 left-135 bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-4xl py-2 px-4 rounded z-31"
           >
             Comprar
@@ -88,7 +84,7 @@ function BooksComponent() {
           </div>
           <button
             id="buy-button-one"
-            onClick={openBookLink("https://loja.uiclap.com/titulo/ua83460/")}
+            onClick={openLink("https://loja.uiclap.com/titulo/ua83460/")}
             className="absolute bottom-28 right-155 bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-4xl py-2 px-4 rounded z-31"
           >
             Comprar

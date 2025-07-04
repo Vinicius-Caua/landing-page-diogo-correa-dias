@@ -23,10 +23,10 @@ function HeaderComponent() {
 
       // Definir pontos de troca fixos na tela
       const breakpoints = {
-        home: { start: 0, end: 800 },
-        sobre: { start: 800, end: 2300 },
-        livros: { start: 2300, end: 4000 },
-        contato: { start: 4000, end: Infinity },
+        home: { start: 0, end: 900 },
+        sobre: { start: 900, end: 2300 },
+        livros: { start: 2300, end: 4400 },
+        contato: { start: 4400, end: Infinity },
       };
 
       // Variável para armazenar a seção encontrada
