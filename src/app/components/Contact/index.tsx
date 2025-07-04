@@ -35,7 +35,7 @@ function ContactComponent() {
     }
   };
   return (
-    <section className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url(/background-contato.png)] shadow-[inset_0_-30px_100px_rgba(0,0,0,0.5)]">
+    <section className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url(/background-contato.png)] mb-30">
       <div className="flex items-center justify-center h-full">
         <div className="relative mt-9">
           <Image

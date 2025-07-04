@@ -5,7 +5,7 @@ import openLink from "@/utils/openLink";
 
 function BooksComponent() {
   return (
-    <section className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url(/background-publicacoes.png)] -mt-34 shadow-[inset_0_-30px_100px_rgba(0,0,0,0.5)]">
+    <section className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url(/background-publicacoes.png)] -mt-34 shadow-[inset_0_30px_100px_rgba(0,0,0,0.5)]">
       <div className="flex items-center justify-center">
         <Image
           src="/title-publicacoes.png"
