@@ -18,8 +18,18 @@ function HeroComponent() {
             alt="Titulo apresentando nome Diogo Correa Dias"
             width={600}
             height={600}
-            className="object-cover mt-2 relative z-10 -ml-36"
+            className="object-cover mt-2 relative z-30 -ml-36"
           />
+          <div className="absolute right-30 z-31">
+            <h1 className="text-5xl font-bold text-[#575757]">
+              Diogo Correa Dias
+            </h1>
+            <div className="mt-4 flex justify-end">
+              <h1 className="text-4xl font-light underline underline-offset-3 text-[#575757]">
+                Escritor
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
