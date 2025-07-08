@@ -25,8 +25,8 @@ function HeaderComponent() {
       const breakpoints = {
         home: { start: 0, end: 900 },
         sobre: { start: 900, end: 2300 },
-        livros: { start: 2300, end: 4400 },
-        contato: { start: 4400, end: Infinity },
+        livros: { start: 2300, end: 4300 },
+        contato: { start: 4300, end: Infinity },
       };
 
       // Variável para armazenar a seção encontrada
