@@ -168,18 +168,18 @@ function AboutComponent() {
       {/* Layout Mobile */}
       <div className="block md:hidden min-h-screen mb-50">
         {/* Papers-about como "colante" no topo */}
-        <div className="relative -mt-12">
+        <div className="relative -mt-21">
           <div className="flex justify-end">
             <div className="relative">
               <Image
                 src="/papers-about.png"
                 alt="Papeis com título 'Sobre Mim...'"
-                width={280}
-                height={194}
+                width={622}
+                height={388}
               />
               {/* Texto centralizado */}
-              <div className="absolute inset-0 flex items-center justify-center translate-y-8 -translate-x-10">
-                <h1 className="text-base font-bold text-[#575757]">
+              <div className="absolute inset-0 flex items-center justify-center translate-y-13 -translate-x-18">
+                <h1 className="text-3xl font-bold text-[#575757]">
                   Sobre mim...
                 </h1>
               </div>
@@ -188,19 +188,34 @@ function AboutComponent() {
         </div>
 
         {/* Container principal */}
-        <div className="px-2 py-6">
+        <div className="px-2 ">
+          {/* Retrato centralizado */}
+          <div className="flex justify-center pt-10">
+            <div className="relative">
+              <Image
+                src="/retrato-about.png"
+                alt="Papeis com retrato do autor"
+                width={564}
+                height={572}
+              />
+              {/* Texto "me" */}
+              <div className="absolute inset-0 flex items-end justify-center rotate-12 -translate-y-23 -translate-x-10">
+                <h1 className="text-5xl font-bold text-[#575757]">me</h1>
+              </div>
+            </div>
+          </div>
           {/* Biografia à esquerda, colada na tela */}
           <div className="relative -ml-2 mb-6">
             <Image
               src="/biografia-about.png"
               alt="Papeis com biografia do autor"
-              width={370}
-              height={462}
+              width={672}
+              height={1122}
             />
             {/* Texto da biografia */}
-            <div className="absolute inset-0 flex items-center justify-center p-4 translate-x-5 -translate-y-12">
-              <div className="w-56 -rotate-2">
-                <h1 className="text-xs font-normal text-black leading-relaxed">
+            <div className="absolute inset-0 flex items-center justify-start p-4 translate-x-25 -translate-y-17">
+              <div className="w-80 -rotate-2">
+                <h1 className="text-base font-normal text-black">
                   Sou{" "}
                   <mark className="bg-yellow-300/40 px-1">
                     Diogo Correa Dias
@@ -234,22 +249,6 @@ function AboutComponent() {
                   apoia, com um carinho especial para minha{" "}
                   <mark className="bg-cyan-300/40 px-1">vó</mark> do coração.
                 </h1>
-              </div>
-            </div>
-          </div>
-
-          {/* Retrato centralizado */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <Image
-                src="/retrato-about.png"
-                alt="Papeis com retrato do autor"
-                width={220}
-                height={286}
-              />
-              {/* Texto "me" */}
-              <div className="absolute inset-0 flex items-end justify-end p-4 rotate-12 -translate-y-11 -translate-x-26">
-                <h1 className="text-lg font-bold text-[#575757]">me</h1>
               </div>
             </div>
           </div>
