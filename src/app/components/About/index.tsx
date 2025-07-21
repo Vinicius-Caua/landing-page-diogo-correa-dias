@@ -205,7 +205,7 @@ function AboutComponent() {
             </div>
           </div>
           {/* Biografia à esquerda, colada na tela */}
-          <div className="relative -ml-2 mb-6">
+          <div className="relative -ml-2">
             <Image
               src="/biografia-about.png"
               alt="Papeis com biografia do autor"
@@ -213,7 +213,7 @@ function AboutComponent() {
               height={1122}
             />
             {/* Texto da biografia */}
-            <div className="absolute inset-0 flex items-center justify-start p-4 translate-x-25 -translate-y-17">
+            <div className="absolute inset-0 flex items-center justify-start p-4 translate-x-25 -translate-y-17 ">
               <div className="w-80 -rotate-2">
                 <h1 className="text-base font-normal text-black">
                   Sou{" "}
