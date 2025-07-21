@@ -69,34 +69,23 @@ function HeroComponent() {
         </div>
       </div>
 
-      {/* Layout Mobile - Foto em cima, papel embaixo */}
+      {/* Layout Mobile */}
       <div className="flex md:hidden items-center justify-center min-h-screen px-4 py-16">
-        <div className="flex flex-col items-center space-y-8 w-full max-w-sm mx-auto">
-          {/* Foto em cima */}
-          <div className="flex justify-center">
-            <Image
-              src="/hero-diogo-foto.png"
-              alt="Foto de Diogo Correa Dias"
-              width={280}
-              height={280}
-              className="object-cover relative z-20"
-            />
-          </div>
-          
+        <div className="flex flex-col items-center space-y-8 w-full max-w-sm mx-auto">          
           {/* Papel com texto embaixo */}
           <div className="relative flex justify-center w-full">
             <Image
-              src="/hero-text.png"
+              src="/hero-text-mobile.png"
               alt="Papel com nome e profissão"
-              width={300}
-              height={300}
+              width={700}
+              height={700}
               className="object-cover relative z-20"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-30 space-y-2">
-              <h1 className="text-xl font-bold text-[#575757]">
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-30">
+              <h1 className="text-3xl rotate-3 font-bold text-[#575757] -translate-y-3">
                 Diogo Correa Dias
               </h1>
-              <h1 className="text-lg font-light underline underline-offset-3 text-[#575757]">
+              <h1 className="text-2xl font-light underline underline-offset-3 text-[#575757] self-end -translate-x-23">
                 Escritor
               </h1>
             </div>
