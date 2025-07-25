@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import openLink from "@/utils/openLink";
+import CardFlip from "../CardFlip";
 
 function BooksComponent() {
   return (
@@ -33,14 +34,25 @@ function BooksComponent() {
               height={952}
               className="object-cover mt-2 relative z-20"
             />
+            {/* Card Flip para o livro 1 */}
+            <div className="absolute -translate-y-176 translate-x-10 z-40">
+              <CardFlip
+                frontSrc={"/capa-livro01.png"}
+                backSrc={"/contra-capa-livro01.png"}
+                width={400}
+                height={600}
+                directionButton="right"
+                className="rotate-3"
+              />
+            </div>
             {/* Título do livro */}
-            <div className="absolute inset-0 flex items-start justify-center pt-16 translate-x-62 translate-y-2 z-30">
+            <div className="absolute inset-0 flex items-start justify-center pt-16 translate-x-55 z-30">
               <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#575757] text-center rotate-4 w-100">
                 Vanessa Verdante líder da Seita das Máscaras
               </h1>
             </div>
             {/* Descrição */}
-            <div className="absolute inset-0 flex items-center justify-center translate-y-22 translate-x-60 z-30">
+            <div className="absolute inset-0 flex items-center justify-center translate-y-21 translate-x-55 z-30">
               <div className="w-117 h-118">
                 <h2 className="text-wrap text-sm md:text-base text-[#3B3B3B]">
                   <mark className="bg-orange-400/40">Vanessa Thorns</mark>, após
@@ -65,10 +77,10 @@ function BooksComponent() {
               </div>
             </div>
             {/* Botão */}
-            <div className="absolute inset-0 flex items-end justify-center pb-16 pl-55">
+            <div className="absolute inset-0 flex items-end justify-center pb-16 pl-45">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua39732/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl md:text-3xl lg:text-4xl py-2 px-4 rounded z-31"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl md:text-3xl lg:text-4xl py-2 px-4 rounded hover:scale-105 ease-in-out duration-300 z-31"
               >
                 Comprar
               </button>
@@ -85,6 +97,17 @@ function BooksComponent() {
               height={952}
               className="object-cover mt-2 relative z-20"
             />
+            {/* Card Flip para o livro 2 */}
+            <div className="absolute -translate-y-173 translate-x-136 z-40">
+              <CardFlip
+                frontSrc={"/capa-livro02.png"}
+                backSrc={"/contra-capa-livro02.png"}
+                width={410}
+                height={600}
+                directionButton="left"
+                className="-rotate-4"
+              />
+            </div>
             {/* Título do livro */}
             <div className="absolute inset-0 flex items-start justify-start pt-20 pl-7 z-30">
               <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#575757] text-center w-100">
@@ -115,10 +138,10 @@ function BooksComponent() {
               </div>
             </div>
             {/* Botão */}
-            <div className="absolute inset-0 flex items-end justify-center pb-22 pr-100">
+            <div className="absolute inset-0 flex items-end justify-center pb-30 pr-105">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua83460/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl md:text-3xl lg:text-4xl py-2 px-4 rounded z-31"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl md:text-3xl lg:text-4xl py-2 px-4 rounded hover:scale-105 ease-in-out duration-300 z-31"
               >
                 Comprar
               </button>
@@ -156,6 +179,16 @@ function BooksComponent() {
               height={333}
               className="object-cover w-full h-auto relative z-20"
             />
+            {/* Card Flip para o livro 1 */}
+            <div className="absolute -translate-y-123 translate-x-10 z-40">
+              <CardFlip
+                frontSrc={"/capa-livro01.png"}
+                backSrc={"/contra-capa-livro01.png"}
+                width={300}
+                height={600}
+                directionButton="right"
+              />
+            </div>
             <Image
               src="/description-livro01-mobile.png"
               alt="Descrição do livro 'Vanessa Verdante líder da Seita das Máscaras'"
@@ -188,7 +221,7 @@ function BooksComponent() {
             <div className="absolute inset-0 flex items-end justify-center -translate-y-14 -translate-x-20 z-31">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua39732/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded hover:scale-105 ease-in-out duration-300"
               >
                 Comprar
               </button>
@@ -204,6 +237,16 @@ function BooksComponent() {
               height={333}
               className="object-cover w-full h-auto relative z-20"
             />
+            {/* Card Flip para o livro 2 */}
+            <div className="absolute -translate-y-135 translate-x-5 z-40">
+              <CardFlip
+                frontSrc={"/capa-livro02.png"}
+                backSrc={"/contra-capa-livro02.png"}
+                width={340}
+                height={600}
+                directionButton="left"
+              />
+            </div>
             <Image
               src="/description-livro02-mobile.png"
               alt="Descrição do livro 'Quiet'"
@@ -235,7 +278,7 @@ function BooksComponent() {
             <div className="absolute inset-0 flex items-end justify-center -translate-y-11 translate-x-5 z-31">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua83460/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded hover:scale-105 ease-in-out duration-300"
               >
                 Comprar
               </button>
