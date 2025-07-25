@@ -150,22 +150,29 @@ function BooksComponent() {
           {/* Livro 1 - Vanessa Verdante */}
           <div className="relative w-full max-w-sm">
             <Image
-              src="/table-livro01.png"
+              src="/table-livro01-mobile.png"
               alt="Livro 'Vanessa Verdante líder da Seita das Máscaras'"
               width={350}
               height={333}
               className="object-cover w-full h-auto relative z-20"
             />
+            <Image
+              src="/description-livro01-mobile.png"
+              alt="Descrição do livro 'Vanessa Verdante líder da Seita das Máscaras'"
+              width={350}
+              height={333}
+              className="object-cover w-full h-auto relative z-20"
+            />
             {/* Título do livro */}
-            <div className="absolute inset-0 flex items-start justify-center pt-3 z-21">
-              <h1 className="text-xs font-bold text-[#575757] text-center rotate-4 max-w-44 leading-tight">
+            <div className="absolute inset-0 flex items-start justify-center translate-y-10 z-21">
+              <h1 className="text-xl font-bold text-[#575757] text-center rotate-4 max-w-60 leading-tight">
                 Vanessa Verdante líder da Seita das Máscaras
               </h1>
             </div>
             {/* Descrição resumida */}
-            <div className="absolute inset-0 flex items-center justify-center px-4 z-21">
-              <div className="max-w-xs">
-                <h2 className="text-xs text-[#3B3B3B] leading-relaxed">
+            <div className="absolute inset-0 flex items-center justify-center translate-y-75 -translate-x-5 -rotate-1 z-21">
+              <div className="max-w-60">
+                <h2 className="text-base text-[#3B3B3B] leading-relaxed">
                   <mark className="bg-orange-400/40">Vanessa Thorns</mark>, após
                   a trágica perda da mãe, é enviada a um orfanato sombrio e
                   ilegal, onde tem seu nome alterado para Vanessa Verdante.
@@ -178,10 +185,10 @@ function BooksComponent() {
               </div>
             </div>
             {/* Botão */}
-            <div className="absolute inset-0 flex items-end justify-center pb-3">
+            <div className="absolute inset-0 flex items-end justify-center -translate-y-14 -translate-x-20 z-31">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua39732/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-sm py-1 px-3 rounded"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded"
               >
                 Comprar
               </button>
@@ -191,22 +198,29 @@ function BooksComponent() {
           {/* Livro 2 - Quiet */}
           <div className="relative w-full max-w-sm">
             <Image
-              src="/table-livro02.png"
+              src="/table-livro02-mobile.png"
               alt="Livro 'Quiet'"
               width={350}
               height={333}
               className="object-cover w-full h-auto relative z-20"
             />
+            <Image
+              src="/description-livro02-mobile.png"
+              alt="Descrição do livro 'Quiet'"
+              width={350}
+              height={333}
+              className="object-cover w-full h-auto relative z-20"
+            />
             {/* Título do livro */}
-            <div className="absolute inset-0 flex items-start justify-center pt-4 z-21">
-              <h1 className="text-xs font-bold text-[#575757] text-center">
+            <div className="absolute inset-0 flex items-start justify-center translate-y-15 z-21">
+              <h1 className="text-2xl font-bold text-[#575757] text-center rotate-4 max-w-60 leading-tight">
                 Quiet
               </h1>
             </div>
             {/* Descrição resumida */}
-            <div className="absolute inset-0 flex items-center justify-center px-4 z-21">
-              <div className="max-w-xs">
-                <h2 className="text-xs text-[#3B3B3B] leading-relaxed">
+            <div className="absolute inset-0 flex items-center justify-center translate-y-83 translate-x-5 rotate-1 z-21">
+              <div className="max-w-60">
+                <h2 className="text-lg text-[#3B3B3B] leading-relaxed">
                   "Perdoe-me, Rick, mas nessa história não há redenções." O Vale
                   do Luar é engolido por uma névoa densa e letal, trazendo
                   consigo a morte e a loucura. Criaturas distorcidas, imitando
@@ -218,10 +232,10 @@ function BooksComponent() {
               </div>
             </div>
             {/* Botão */}
-            <div className="absolute inset-0 flex items-end justify-center pb-3">
+            <div className="absolute inset-0 flex items-end justify-center -translate-y-11 translate-x-5 z-31">
               <button
                 onClick={openLink("https://loja.uiclap.com/titulo/ua83460/")}
-                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-sm py-1 px-3 rounded"
+                className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-2xl py-2 px-5 rounded"
               >
                 Comprar
               </button>
