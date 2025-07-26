@@ -15,7 +15,7 @@ function FooterComponent() {
             onClick={openLink(
               "https://www.linkedin.com/in/marcelly-do-nascimento-farias-93aa17268/"
             )}
-            className="text-white font-normal text-2xl underline underline-offset-2 cursor-pointer"
+            className="text-white font-normal text-2xl underline underline-offset-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
           >
             Marcelly Farias
           </h1>
@@ -26,7 +26,7 @@ function FooterComponent() {
             onClick={openLink(
               "https://www.linkedin.com/in/vinicius-cau%C3%A3-111b6620b/"
             )}
-            className="text-white font-normal text-2xl underline underline-offset-2 cursor-pointer"
+            className="text-white font-normal text-2xl underline underline-offset-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
           >
             Vinicius Caua
           </h1>
