@@ -130,7 +130,7 @@ function HeaderComponent() {
         {/* Layout para Desktop e Tablet */}
         <div className="hidden md:flex items-center justify-between h-full">
           {/* Logo Desktop/Tablet */}
-          <div className="relative w-64 lg:w-72 xl:w-89 h-20 xl:h-24 flex items-center justify-center">
+          <div className="relative w-64 lg:w-72 xl:w-89 h-20 xl:h-24 flex items-center justify-center hover:scale-105 ease-in-out duration-300">
             <Image
               src="/fita-titulo-nome.png"
               alt="Fita de título"

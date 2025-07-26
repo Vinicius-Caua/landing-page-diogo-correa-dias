@@ -47,7 +47,7 @@ function ContactComponent() {
               alt="Fita decorativa ondulada"
               width={280}
               height={226}
-              className="object-cover"
+              className="object-cover hover:scale-105 ease-in-out duration-300"
             />
           </div>
 
@@ -63,12 +63,12 @@ function ContactComponent() {
           {/* Conteúdo principal */}
           <div className="absolute inset-0 flex items-center justify-center translate-y-15 -translate-x-38 z-30">
             <div className="flex flex-col items-start">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#575757] mb-6 md:mb-8 lg:mb-10">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#575757] mb-6 md:mb-8 lg:mb-10 hover:scale-105 ease-in-out duration-300">
                 Entre em Contato comigo!
               </h1>
 
               {/* Container flex horizontal para texto + ícones */}
-              <div className="flex justify-center items-start gap-6 md:gap-8">
+              <div className="flex justify-center items-start gap-6 md:gap-8 hover:scale-105 ease-in-out duration-300">
                 {/* Informações de contato */}
                 <div className="flex flex-col gap-6 md:gap-8 mt-8 md:mt-12">
                   <div className="flex items-center justify-start gap-3">
@@ -112,7 +112,7 @@ function ContactComponent() {
                       )}
                       className="text-xl md:text-2xl lg:text-3xl font-normal text-[#575757] underline underline-offset-2 cursor-pointer"
                     >
-                      diogo-correa-dias
+                      in/diogo-correa-dias
                     </h2>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ function ContactComponent() {
           {/* Seção PIX */}
           <div className="absolute inset-0 flex items-start justify-center pt-60 translate-x-80 z-30">
             <div className="flex items-center gap-2">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-normal underline underline-offset-2 text-[#575757]">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-normal underline underline-offset-2 text-[#575757] hover:scale-105 ease-in-out duration-300">
                 faça uma doação pix:
               </h1>
               <button

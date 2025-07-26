@@ -7,7 +7,7 @@ function AboutComponent() {
       {/* Layout Desktop */}
       <div className="hidden lg:block">
         <div className="flex justify-end -mt-32 relative">
-          <div className="relative">
+          <div className="relative hover:scale-105 ease-in-out duration-300">
             <Image
               src="/papers-about.png"
               alt="Papeis com título 'Sobre Mim...'"
@@ -27,8 +27,9 @@ function AboutComponent() {
             alt="Papeis com biografia do autor"
             width={700}
             height={1158}
+            className="hover:scale-105 ease-in-out duration-300"
           />
-          <div className="absolute top-30 left-50 w-104 h-175 -rotate-2">
+          <div className="absolute top-30 left-50 w-104 h-175 -rotate-2 hover:scale-105 ease-in-out duration-300">
             <h1 className="text-2xl font-normal text-black text-wrap">
               Sou{" "}
               <mark className="bg-yellow-300/40 px-1">Diogo Correa Dias</mark>,
@@ -59,7 +60,7 @@ function AboutComponent() {
               <mark className="bg-cyan-300/40 px-1">vó</mark> do coração.
             </h1>
           </div>
-          <div className="relative">
+          <div className="relative hover:scale-105 ease-in-out duration-300">
             <Image
               src="/retrato-about.png"
               alt="Papeis com retrato do autor"

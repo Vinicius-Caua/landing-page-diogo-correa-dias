@@ -9,7 +9,7 @@ function BooksComponent() {
     <section className="w-full min-h-screen bg-cover bg-center bg-no-repeat bg-[url(/background-publicacoes.png)] -mt-34 shadow-[inset_0_30px_100px_rgba(0,0,0,0.5)]">
       {/* Layout Desktop + Tablet */}
       <div className="hidden md:block">
-        <div className="flex items-center justify-center relative">
+        <div className="flex items-center justify-center relative hover:scale-105 ease-in-out duration-300">
           <Image
             src="/title-publicacoes.png"
             alt="Titulo seção 'Publicações'"
@@ -19,13 +19,13 @@ function BooksComponent() {
           />
           {/* Título */}
           <div className="absolute inset-0 flex items-center justify-center -translate-y-9 translate-x-5 z-30">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#575757] rotate-2">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#575757] rotate-2 hover:scale-105 ease-in-out duration-300">
               Minhas publicações
             </h1>
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center hover:scale-105 ease-in-out duration-300">
           <div className="relative">
             <Image
               src="/table-livro01.png"
@@ -88,7 +88,7 @@ function BooksComponent() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center mt-10 pb-28">
+        <div className="flex items-center justify-center mt-10 pb-28 hover:scale-105 ease-in-out duration-300">
           <div className="relative">
             <Image
               src="/table-livro02.png"
