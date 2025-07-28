@@ -82,7 +82,7 @@ function HeroComponent() {
               className="object-cover relative z-20"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center z-30">
-              <h1 className="text-3xl rotate-3 font-bold text-[#575757] -translate-y-3">
+              <h1 className="text-3xl rotate-3 font-bold text-[#575757] -translate-y-3 translate-x-1">
                 Diogo Correa Dias
               </h1>
               <h1 className="text-2xl font-light underline underline-offset-3 text-[#575757] self-end -translate-x-23">

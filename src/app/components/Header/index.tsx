@@ -88,7 +88,6 @@ function HeaderComponent() {
       font-semibold cursor-pointer 
       px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 
       transition-colors duration-300 ease-in-out
-      rounded-lg
       block w-full text-center
     `;
 
@@ -112,7 +111,7 @@ function HeaderComponent() {
     const baseClasses = `
       text-2xl font-bold cursor-pointer 
       px-4 py-3 transition-colors duration-300 ease-in-out
-      rounded-lg block w-full text-center
+      block w-full text-center
     `;
 
     const isActive = activeSection === sectionId;

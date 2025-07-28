@@ -37,8 +37,8 @@ function ContactComponent() {
 
   return (
     <section className="w-full min-h-screen bg-cover bg-center bg-no-repeat bg-[url(/background-contato.png)] mb-30">
-      {/* Layout Desktop + Tablet */}
-      <div className="hidden md:flex items-center justify-center h-screen">
+      {/* Layout Desktop */}
+      <div className="hidden lg:flex items-center justify-center h-screen">
         <div className="relative mt-9">
           {/* Fita decorativa */}
           <div className="absolute inset-0 flex items-start justify-start -translate-y-70 -translate-x-100 z-20">
@@ -155,12 +155,130 @@ function ContactComponent() {
         </div>
       </div>
 
+      {/* Layout Tablet */}
+      <div className="hidden md:flex lg:hidden items-center justify-center min-h-screen px-4 py-8">
+        <div className="relative max-w-4xl mx-auto">
+          {/* Fita decorativa */}
+          <div className="absolute inset-0 flex items-start justify-start -translate-y-50 -translate-x-70 z-20">
+            <Image
+              src="/wave-icon.png"
+              alt="Fita decorativa ondulada"
+              width={200}
+              height={162}
+              className="object-cover hover:scale-105 ease-in-out duration-300"
+            />
+          </div>
+
+          {/* Mesa de contato */}
+          <Image
+            src="/table-contato.png"
+            alt="Table com redes sociais e informações de contato"
+            width={800}
+            height={474}
+            className="object-cover mt-2 relative z-20"
+          />
+
+          {/* Conteúdo principal */}
+          <div className="absolute inset-0 flex items-center justify-center translate-y-10 -translate-x-26 z-30">
+            <div className="flex flex-col items-start">
+              <h1 className="text-2xl font-bold text-[#575757] mb-6 hover:scale-105 ease-in-out duration-300">
+                Entre em Contato comigo!
+              </h1>
+
+              {/* Container flex horizontal para texto + ícones */}
+              <div className="flex justify-center items-start gap-6 hover:scale-105 ease-in-out duration-300">
+                {/* Informações de contato */}
+                <div className="flex flex-col gap-5 mt-6">
+                  <div className="flex items-center justify-start gap-2">
+                    <h2 className="text-xl font-bold text-[#575757] bg-[#FFC62B]/40">
+                      Email:
+                    </h2>
+                    <h2 className="text-lg font-normal text-[#575757] underline underline-offset-2">
+                      digocdias@live.com
+                    </h2>
+                  </div>
+                  <div className="flex items-center justify-start gap-2">
+                    <h2
+                      onClick={openLink(
+                        "https://www.instagram.com/diogocorreadias/"
+                      )}
+                      className="text-xl font-bold text-[#575757] bg-[#FD9C3D]/40 hover:bg-[#FD9C3D]/80 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                    >
+                      Instagram:
+                    </h2>
+                    <h2
+                      onClick={openLink(
+                        "https://www.instagram.com/diogocorreadias/"
+                      )}
+                      className="text-lg font-normal text-[#575757] underline underline-offset-2 cursor-pointer"
+                    >
+                      @diogocorreadias
+                    </h2>
+                  </div>
+                  <div className="flex items-center justify-start gap-2">
+                    <h2
+                      onClick={openLink(
+                        "https://br.linkedin.com/in/diogo-correa-dias-1366b2265"
+                      )}
+                      className="text-xl font-bold text-[#575757] bg-[#50D8FF]/40 hover:bg-[#50D8FF]/80 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                    >
+                      LinkedIn:
+                    </h2>
+                    <h2
+                      onClick={openLink(
+                        "https://br.linkedin.com/in/diogo-correa-dias-1366b2265"
+                      )}
+                      className="text-lg font-normal text-[#575757] underline underline-offset-2 cursor-pointer"
+                    >
+                      in/diogo-correa-dias
+                    </h2>
+                  </div>
+                </div>
+
+                {/* Ícones das redes sociais */}
+                <div className="flex items-center">
+                  <Image
+                    src="/icones-redes-sociais.png"
+                    alt="Ícones de redes sociais"
+                    width={70}
+                    height={203}
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Seção PIX */}
+          <div className="absolute inset-0 flex items-start justify-center pt-40 translate-x-54 z-30">
+            <div className="flex items-center gap-2">
+              <h1 className="text-lg font-normal underline underline-offset-2 text-[#575757] hover:scale-105 ease-in-out duration-300">
+                faça uma doação pix:
+              </h1>
+              <button
+                onClick={handleCopyPix}
+                className={`
+                  ${
+                    copied
+                      ? "bg-green-500/80 text-white"
+                      : "bg-[#FFC62B]/40 hover:bg-[#FFC62B]/80 hover:scale-105 ease-in-out duration-300 text-[#575757]"
+                  } 
+                  cursor-pointer text-lg font-bold py-2 px-3 rounded transition-all duration-300
+                `}
+              >
+                {copied ? "Copiado!" : "Copiar"}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Layout Mobile */}
       <div className="flex md:hidden flex-col items-center justify-start min-h-screen">
         <div className="relative w-full">
             {/* Seção PIX mobile */}
-            <div className="absolute flex items-center gap-2 translate-y-40 translate-x-22 z-50">
-              <h1 className="text-2xl font-normal underline underline-offset-2 text-[#575757] text-center">
+            <div className="absolute flex items-center gap-2 translate-y-32 translate-x-18 z-50">
+              <h1 className="text-lg font-normal underline underline-offset-2 text-[#575757] text-center">
                 Faça uma doação pix:
               </h1>
               <button
@@ -171,7 +289,7 @@ function ContactComponent() {
                         ? "bg-green-500/80 text-white"
                         : "bg-[#FFC62B]/40 hover:bg-[#FFC62B]/80 hover:scale-105 ease-in-out duration-300 text-[#575757]"
                     } 
-                    cursor-pointer text-2xl font-bold py-1 px-3 rounded transition-all duration-300 -rotate-3
+                    cursor-pointer text-xl font-bold py-1 px-3 rounded transition-all duration-300 -rotate-3
                   `}
               >
                 {copied ? "Copiado!" : "Copiar"}
@@ -199,22 +317,22 @@ function ContactComponent() {
             />
           </div>
 
-          {/* Conteúdo principal mobile com flexbox */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center z-30 pr-10 pl-15 translate-y-35">
+          {/* Conteúdo principal mobile */}
+          <div className="absolute inset-0 flex flex-col items-start justify-center z-30 pr-10 pl-15 translate-y-35">
             {/* Título principal mobile */}
-            <h1 className="text-3xl font-bold text-[#575757] mb-5 text-center">
+            <h1 className="text-xl font-bold text-[#575757] mb-2">
               Entre em Contato comigo!
             </h1>
 
-            {/* Container mobile - tudo em coluna */}
+            {/* Container mobile */}
             <div className="flex items-center w-full">
               {/* Informações de contato mobile */}
               <div className="flex flex-col gap-5 w-full">
                 <div className="flex items-center gap-1">
-                  <h2 className="text-2xl font-bold text-[#575757] bg-[#FFC62B]/40 px-2 rounded">
+                  <h2 className="text-xl font-bold text-[#575757] bg-[#FFC62B]/40 px-2 rounded">
                     Email:
                   </h2>
-                  <h2 className="text-xl font-normal text-[#575757] underline underline-offset-2 text-center">
+                  <h2 className="text-base font-normal text-[#575757] underline underline-offset-2 text-center">
                     digocdias@live.com
                   </h2>
                 </div>
@@ -223,7 +341,7 @@ function ContactComponent() {
                     onClick={openLink(
                       "https://www.instagram.com/diogocorreadias/"
                     )}
-                    className="text-2xl font-bold text-[#575757] bg-[#FD9C3D]/40 hover:bg-[#FD9C3D]/80 cursor-pointer px-2 rounded hover:scale-105 ease-in-out duration-300"
+                    className="text-xl font-bold text-[#575757] bg-[#FD9C3D]/40 hover:bg-[#FD9C3D]/80 cursor-pointer px-2 rounded hover:scale-105 ease-in-out duration-300"
                   >
                     Instagram:
                   </h2>
@@ -231,7 +349,7 @@ function ContactComponent() {
                     onClick={openLink(
                       "https://www.instagram.com/diogocorreadias/"
                     )}
-                    className="text-xl font-normal text-[#575757] underline underline-offset-2 cursor-pointer text-center"
+                    className="text-base font-normal text-[#575757] underline underline-offset-2 cursor-pointer text-center"
                   >
                     @diogocorreadias
                   </h2>
@@ -241,7 +359,7 @@ function ContactComponent() {
                     onClick={openLink(
                       "https://br.linkedin.com/in/diogo-correa-dias-1366b2265"
                     )}
-                    className="text-2xl font-bold text-[#575757] bg-[#50D8FF]/40 hover:bg-[#50D8FF]/80 cursor-pointer px-2 rounded hover:scale-105 ease-in-out duration-300"
+                    className="text-xl font-bold text-[#575757] bg-[#50D8FF]/40 hover:bg-[#50D8FF]/80 cursor-pointer px-2 rounded hover:scale-105 ease-in-out duration-300"
                   >
                     LinkedIn:
                   </h2>
@@ -249,7 +367,7 @@ function ContactComponent() {
                     onClick={openLink(
                       "https://br.linkedin.com/in/diogo-correa-dias-1366b2265"
                     )}
-                    className="text-xl font-normal text-[#575757] underline underline-offset-2 cursor-pointer text-center"
+                    className="text-base font-normal text-[#575757] underline underline-offset-2 cursor-pointer text-center"
                   >
                     diogo-correa-dias
                   </h2>

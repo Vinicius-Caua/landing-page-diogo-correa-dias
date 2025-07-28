@@ -7,8 +7,8 @@ import CardFlip from "../CardFlip";
 function BooksComponent() {
   return (
     <section className="w-full min-h-screen bg-cover bg-center bg-no-repeat bg-[url(/background-publicacoes.png)] -mt-34 shadow-[inset_0_30px_100px_rgba(0,0,0,0.5)]">
-      {/* Layout Desktop + Tablet */}
-      <div className="hidden md:block">
+      {/* Layout Desktop */}
+      <div className="hidden lg:block">
         <div className="flex items-center justify-center relative hover:scale-105 ease-in-out duration-300">
           <Image
             src="/title-publicacoes.png"
@@ -150,8 +150,147 @@ function BooksComponent() {
         </div>
       </div>
 
-      {/* Layout Mobile apenas */}
-      <div className="block md:hidden min-h-screen">
+      {/* Layout Tablet */}
+      <div className="hidden md:block lg:hidden">
+        {/* Título principal tablet */}
+        <div className="flex items-center justify-center relative hover:scale-105 ease-in-out duration-300">
+          <Image
+            src="/title-publicacoes.png"
+            alt="Titulo seção 'Publicações'"
+            width={800}
+            height={296}
+            className="object-cover -mt-16 relative z-20"
+          />
+          {/* Título */}
+          <div className="absolute inset-0 flex items-center justify-center -translate-y-6 translate-x-3 z-30">
+            <h1 className="text-2xl font-bold text-[#575757] rotate-2 hover:scale-105 ease-in-out duration-300">
+              Minhas publicações
+            </h1>
+          </div>
+        </div>
+
+        {/* Container dos livros em coluna */}
+        <div className="flex flex-col items-center space-y-8 px-4 py-6">
+          {/* Livro 1 - Vanessa Verdante */}
+          <div className="flex items-center justify-center hover:scale-105 ease-in-out duration-300">
+            <div className="relative">
+              <Image
+                src="/table-livro01.png"
+                alt="Livro 'Vanessa Verdante líder da Seita das Máscaras', com descrição e botão de compra"
+                width={700}
+                height={666}
+                className="object-cover mt-2 relative z-20"
+              />
+              {/* Card Flip para o livro 1 */}
+              <div className="absolute -translate-y-123 translate-x-7 z-40">
+                <CardFlip
+                  frontSrc={"/capa-livro01.png"}
+                  backSrc={"/contra-capa-livro01.png"}
+                  width={280}
+                  height={420}
+                  directionButton="right"
+                  className="rotate-3"
+                />
+              </div>
+              {/* Título do livro */}
+              <div className="absolute inset-0 flex items-start justify-center pt-11 translate-x-40 z-30">
+                <h1 className="text-base font-bold text-[#575757] text-center rotate-4 w-70">
+                  Vanessa Verdante líder da Seita das Máscaras
+                </h1>
+              </div>
+              {/* Descrição */}
+              <div className="absolute inset-0 flex items-center justify-center translate-y-15 translate-x-38 z-30">
+                <div className="w-82 h-82">
+                  <h2 className="text-wrap text-sm text-[#3B3B3B]">
+                    <mark className="bg-orange-400/40">Vanessa Thorns</mark>, após
+                    a trágica perda da mãe, é enviada a um orfanato sombrio e
+                    ilegal, onde tem seu nome alterado para Vanessa Verdante.
+                    Logo, descobre que o lugar é muito mais sinistro do que
+                    aparenta, punindo até os menores deslizes com violência ou até
+                    morte. Determinada a manter a esperança, Vanessa forja
+                    alianças valiosas enquanto aguarda adoção ou recrutamento para
+                    um esquema enigmático e cruel. Nesse sistema corrompido, o
+                    proprietário do orfanato, conhecido apenas como Verdante,
+                    trata todos como filhos sob uma rígida ideologia de igualdade.
+                    Mas há uma regra mortal: órfãos que chegam aos 18 anos sem
+                    utilidade são executados. Conforme o tempo passa, Vanessa se
+                    vê presa entre a sobrevivência e a ética.
+                  </h2>
+                </div>
+              </div>
+              {/* Botão */}
+              <div className="absolute inset-0 flex items-end justify-center pb-11 pl-32">
+                <button
+                  onClick={openLink("https://loja.uiclap.com/titulo/ua39732/")}
+                  className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-xl py-2 px-4 rounded hover:scale-105 ease-in-out duration-300 z-31"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Livro 2 - Quiet */}
+          <div className="flex items-center justify-center mt-6 pb-20 hover:scale-105 ease-in-out duration-300">
+            <div className="relative">
+              <Image
+                src="/table-livro02.png"
+                alt="Livro 'Quiet', com descrição e botão de compra"
+                width={700}
+                height={666}
+                className="object-cover mt-2 relative z-20"
+              />
+              {/* Card Flip para o livro 2 */}
+              <div className="absolute -translate-y-121 translate-x-95 z-40">
+                <CardFlip
+                  frontSrc={"/capa-livro02.png"}
+                  backSrc={"/contra-capa-livro02.png"}
+                  width={287}
+                  height={420}
+                  directionButton="left"
+                  className="-rotate-4"
+                />
+              </div>
+              {/* Título do livro */}
+              <div className="absolute inset-0 flex items-start justify-start pt-14 pl-5 z-30">
+                <h1 className="text-xl font-bold text-[#575757] text-center w-70">
+                  Quiet
+                </h1>
+              </div>
+              {/* Descrição */}
+              <div className="absolute inset-0 flex items-center justify-start translate-y-10 translate-x-15 z-30">
+                <div className="w-70 h-82">
+                  <h2 className="text-wrap text-sm text-[#3B3B3B]">
+                    "Perdoe-me, Rick, mas nessa história não há redenções." O Vale
+                    do Luar é engolido por uma névoa densa e letal, trazendo
+                    consigo a morte e a loucura. Criaturas distorcidas, imitando
+                    formas humanas, dilaceram a sanidade e caçam sem piedade.{" "}
+                    <mark className="bg-orange-400/40">Rick Ike Freitas</mark>,
+                    músico fracassado e de temperamento explosivo, carrega um
+                    passado de ciúmes e agressões. Suas relações desfeitas e
+                    crises constantes o colocam à beira do colapso emocional. Ao
+                    lado de Allan e Olivia, Rick está entre os poucos
+                    sobreviventes do apocalipse. Conforme a névoa avança, ele se
+                    une a outros na busca desesperada por respostas.
+                  </h2>
+                </div>
+              </div>
+              {/* Botão */}
+              <div className="absolute inset-0 flex items-end justify-center pb-21 pr-73">
+                <button
+                  onClick={openLink("https://loja.uiclap.com/titulo/ua83460/")}
+                  className="bg-[#FFC62B]/40 hover:bg-[#FFC62B]/70 cursor-pointer text-[#575757] text-xl py-2 px-4 rounded hover:scale-105 ease-in-out duration-300 z-31"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Layout Mobile */}
+      <div className="block md:hidden min-h-screen pb-20">
         {/* Título principal */}
         <div className="flex items-center justify-center relative">
           <Image
@@ -159,10 +298,10 @@ function BooksComponent() {
             alt="Titulo seção 'Publicações'"
             width={500}
             height={336}
-            className="object-cover relative z-20"
+            className="object-cover relative z-20 mt-10"
           />
           <div className="absolute inset-0 flex items-center justify-center z-21">
-            <h1 className="text-3xl font-bold text-[#575757] rotate-2 translate-y-18">
+            <h1 className="text-2xl font-bold text-[#575757] rotate-2 translate-y-20">
               Minhas publicações
             </h1>
           </div>
@@ -180,7 +319,7 @@ function BooksComponent() {
               className="object-cover w-full h-auto relative z-20"
             />
             {/* Card Flip para o livro 1 */}
-            <div className="absolute -translate-y-123 translate-x-10 z-40">
+            <div className="absolute -translate-y-122 translate-x-10 z-40">
               <CardFlip
                 frontSrc={"/capa-livro01.png"}
                 backSrc={"/contra-capa-livro01.png"}
@@ -235,14 +374,14 @@ function BooksComponent() {
               alt="Livro 'Quiet'"
               width={350}
               height={333}
-              className="object-cover w-full h-auto relative z-20"
+              className="object-cover w-full h-auto relative z-20 py-6 px-6"
             />
             {/* Card Flip para o livro 2 */}
-            <div className="absolute -translate-y-135 translate-x-5 z-40">
+            <div className="absolute -translate-y-124 translate-x-10 z-40">
               <CardFlip
                 frontSrc={"/capa-livro02.png"}
                 backSrc={"/contra-capa-livro02.png"}
-                width={340}
+                width={300}
                 height={600}
                 directionButton="left"
               />
@@ -255,8 +394,8 @@ function BooksComponent() {
               className="object-cover w-full h-auto relative z-20"
             />
             {/* Título do livro */}
-            <div className="absolute inset-0 flex items-start justify-center translate-y-15 z-21">
-              <h1 className="text-2xl font-bold text-[#575757] text-center rotate-4 max-w-60 leading-tight">
+            <div className="absolute inset-0 flex items-start justify-center translate-y-18 z-21">
+              <h1 className="text-2xl font-bold text-[#575757] text-center rotate-1 max-w-60 leading-tight">
                 Quiet
               </h1>
             </div>

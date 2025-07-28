@@ -46,10 +46,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={mynerve.className}>
-      <body>
-        <HeaderComponent />
-        {children}
-        <FooterComponent />
+      <body className="overflow-x-hidden max-w-full m-0 p-0">
+        <div className="max-w-full overflow-x-hidden">
+          <HeaderComponent />
+          {children}
+          <FooterComponent />
+        </div>
       </body>
     </html>
   );

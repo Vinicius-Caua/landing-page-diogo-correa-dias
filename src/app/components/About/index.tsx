@@ -167,9 +167,9 @@ function AboutComponent() {
       </div>
 
       {/* Layout Mobile */}
-      <div className="block md:hidden min-h-screen mb-50">
+      <div className="block md:hidden min-h-screen">
         {/* Papers-about como "colante" no topo */}
-        <div className="relative -mt-21">
+        <div className="relative -mt-18">
           <div className="flex justify-end">
             <div className="relative">
               <Image
@@ -179,8 +179,8 @@ function AboutComponent() {
                 height={388}
               />
               {/* Texto centralizado */}
-              <div className="absolute inset-0 flex items-center justify-center translate-y-13 -translate-x-18">
-                <h1 className="text-3xl font-bold text-[#575757]">
+              <div className="absolute inset-0 flex items-center justify-center translate-y-11 -translate-x-15">
+                <h1 className="text-2xl font-bold text-[#575757]">
                   Sobre mim...
                 </h1>
               </div>
@@ -200,7 +200,7 @@ function AboutComponent() {
                 height={572}
               />
               {/* Texto "me" */}
-              <div className="absolute inset-0 flex items-end justify-center rotate-12 -translate-y-23 -translate-x-10">
+              <div className="absolute inset-0 flex items-end justify-center rotate-12 -translate-y-18 -translate-x-9">
                 <h1 className="text-5xl font-bold text-[#575757]">me</h1>
               </div>
             </div>
@@ -214,9 +214,9 @@ function AboutComponent() {
               height={1122}
             />
             {/* Texto da biografia */}
-            <div className="absolute inset-0 flex items-center justify-start p-4 translate-x-25 -translate-y-17 ">
-              <div className="w-80 -rotate-2">
-                <h1 className="text-base font-normal text-black">
+            <div className="absolute inset-0 flex items-center justify-start p-4 translate-x-20 -translate-y-15 ">
+              <div className="w-65 -rotate-2">
+                <h1 className="text-sm font-normal text-black">
                   Sou{" "}
                   <mark className="bg-yellow-300/40 px-1">
                     Diogo Correa Dias
