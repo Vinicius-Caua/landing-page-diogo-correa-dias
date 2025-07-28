@@ -2,6 +2,7 @@ import { Mynerve } from "next/font/google";
 import type { Viewport } from "next";
 import HeaderComponent from "./components/Header";
 import FooterComponent from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const mynerve = Mynerve({
@@ -50,6 +51,7 @@ export default function RootLayout({
         <div className="max-w-full overflow-x-hidden">
           <HeaderComponent />
           {children}
+          <Analytics />
           <FooterComponent />
         </div>
       </body>
