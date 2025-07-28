@@ -186,7 +186,7 @@ function HeaderComponent() {
           </nav>
         </div>
 
-        {/* Layout para Mobile apenas */}
+        {/* Layout para Mobile */}
         <div className="md:hidden">
           {/* Header Mobile */}
           <div className="flex items-center justify-between h-20 py-2">

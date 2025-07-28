@@ -6,7 +6,7 @@ import openLink from "@/utils/openLink";
 
 function ContactComponent() {
   const [copied, setCopied] = useState(false);
-  const pixKey = "30fdeced-f818-47d6-af50-e632b79e107a"; // Sua chave PIX
+  const pixKey = "30fdeced-f818-47d6-af50-e632b79e107a";
 
   const handleCopyPix = async () => {
     try {
