@@ -2,6 +2,8 @@
 
 **Landing page oficial de Diogo Correa Dias, escritor de ficção científica e fantasia.**
 
+**Acesse: https://diogo-correa-dias.vercel.app/**
+
 <div align="center">
   <img src="public/hero-diogo-foto.png" alt="Diogo Correa Dias" width="300" />
 </div>
@@ -167,7 +169,7 @@ Este projeto está otimizado para deploy na **Vercel**:
 
 ```bash
 # Link
-
+https://diogo-correa-dias.vercel.app/
 ```
 ---
 
