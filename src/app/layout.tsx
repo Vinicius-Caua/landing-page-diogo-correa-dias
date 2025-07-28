@@ -3,6 +3,7 @@ import type { Viewport } from "next";
 import HeaderComponent from "./components/Header";
 import FooterComponent from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const mynerve = Mynerve({
@@ -52,6 +53,7 @@ export default function RootLayout({
           <HeaderComponent />
           {children}
           <Analytics />
+          <SpeedInsights />
           <FooterComponent />
         </div>
       </body>
