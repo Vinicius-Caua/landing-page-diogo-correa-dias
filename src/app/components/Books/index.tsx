@@ -118,7 +118,7 @@ function BooksComponent() {
             <div className="absolute inset-0 flex items-center justify-start translate-y-15 translate-x-22 z-30">
               <div className="w-100 h-118">
                 <h2 className="text-wrap text-sm md:text-base text-[#3B3B3B]">
-                  "Perdoe-me, Rick, mas nessa história não há redenções." O Vale
+                  &quot;Perdoe-me, Rick, mas nessa história não há redenções.&quot; O Vale
                   do Luar é engolido por uma névoa densa e letal, trazendo
                   consigo a morte e a loucura. Criaturas distorcidas, imitando
                   formas humanas, dilaceram a sanidade e caçam sem piedade.{" "}
@@ -261,7 +261,7 @@ function BooksComponent() {
               <div className="absolute inset-0 flex items-center justify-start translate-y-10 translate-x-15 z-30">
                 <div className="w-70 h-82">
                   <h2 className="text-wrap text-sm text-[#3B3B3B]">
-                    "Perdoe-me, Rick, mas nessa história não há redenções." O Vale
+                    &quot;Perdoe-me, Rick, mas nessa história não há redenções.&quot; O Vale
                     do Luar é engolido por uma névoa densa e letal, trazendo
                     consigo a morte e a loucura. Criaturas distorcidas, imitando
                     formas humanas, dilaceram a sanidade e caçam sem piedade.{" "}
@@ -403,7 +403,7 @@ function BooksComponent() {
             <div className="absolute inset-0 flex items-center justify-center translate-y-83 translate-x-5 rotate-1 z-21">
               <div className="max-w-60">
                 <h2 className="text-lg text-[#3B3B3B] leading-relaxed">
-                  "Perdoe-me, Rick, mas nessa história não há redenções." O Vale
+                  &quot;Perdoe-me, Rick, mas nessa história não há redenções.&quot; O Vale
                   do Luar é engolido por uma névoa densa e letal, trazendo
                   consigo a morte e a loucura. Criaturas distorcidas, imitando
                   formas humanas, dilaceram a sanidade e caçam sem piedade.{" "}
